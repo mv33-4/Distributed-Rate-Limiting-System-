@@ -161,27 +161,11 @@ Centralized view of active rate limit keys:
 - **Reset Operations**: Clear individual keys or bulk reset via admin API
 - **Algorithm Assignment**: View which algorithm each key uses
 
-### 📈 Analytics & Trends (Demo Preview)
-![Analytics Trends](examples/web-dashboard/public/screenshots/analytics-preview.png)
-
 Historical analytics and insights *(displays simulated data for preview purposes)*:
 - **Time-series Visualization**: Request volume, block rate, latency trends
 - **Top Keys Analysis**: Most active endpoints and users
 - **Geographic Distribution**: Request origins by region
 - **Compliance Reporting**: Rate limit violations and threshold breaches
-
-> **Note**: This page displays simulated analytics data for preview purposes. Historical analytics features require a time-series database backend (InfluxDB, Prometheus, or TimescaleDB) with data aggregation endpoints. See the [Analytics Roadmap](examples/web-dashboard/README.md#-analytics-roadmap-future-implementation) for implementation details.
-
-### 🧮 Algorithm Comparison
-![Algorithms Education](examples/web-dashboard/public/screenshots/algorithms-preview.png)
-
-Educational page for understanding rate limiting algorithms:
-- **Interactive Visualizations**: See how Token Bucket, Sliding Window, Fixed Window, Leaky Bucket, Composite work
-- **Real-time Simulation**: Adjust parameters and observe behavior changes
-- **Use Case Guidance**: When to use each algorithm (burst tolerance, strict enforcement, memory efficiency, traffic shaping, multi-algorithm composition)
-- **Performance Comparison**: Memory usage, accuracy, implementation complexity
-
----
 
 ## 📦 Installation
 
@@ -990,62 +974,5 @@ java -version  # Should show OpenJDK 21.x.x
 
 ---
 
-## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Update documentation
-6. Submit a pull request
-
----
-
-## 📚 Resources
-
-- **[API Documentation](docs/API.md)** - Complete REST API reference
-- **[Configuration Guide](docs/CONFIGURATION.md)** - Detailed configuration options
-- **[Performance Tuning](docs/PERFORMANCE.md)** - Optimization guidelines
-- **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
-- **[Blog Post](BLOG_POST.md)** - Detailed technical walkthrough
-
----
-
-## 🤖 Development with AI
-
-This project was developed with assistance from **GitHub Copilot**, which helped accelerate development while maintaining high standards for code quality, testing, and documentation.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Spring Boot Team** - For the excellent framework
-- **Redis Labs** - For the high-performance data store
-- **Testcontainers** - For making integration testing seamless
-- **Open Source Community** - For inspiration and feedback
-
----
-
-## 🆘 Support
-
-- **Documentation**: Check the [docs/](docs/) directory for comprehensive guides
-- **Issues**: Report bugs and request features via [GitHub Issues](https://github.com/uppnrise/distributed-rate-limiter/issues)
-- **Examples**: See [docs/examples/](docs/examples/) for integration examples
-
----
-
-<div align="center">
-
-**Built with ❤️ for the developer community**
-
-[⭐ Star this project](https://github.com/uppnrise/distributed-rate-limiter) if you find it useful!
-
-</div>
