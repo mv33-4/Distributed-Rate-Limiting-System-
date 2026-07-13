@@ -913,46 +913,5 @@ The project includes comprehensive integration tests using Testcontainers:
 
 ---
 
-## 🏗️ Development
-
-### Building from Source
-
-```bash
-# Build JAR
-./mvnw clean package
-
-# Run tests (requires Docker for integration tests)
-./mvnw test
-
-# Check code style
-./mvnw checkstyle:check
-```
-
-### Development Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/uppnrise/distributed-rate-limiter.git
-cd distributed-rate-limiter
-
-# Install Java 21 (required)
-sudo apt update && sudo apt install -y openjdk-21-jdk
-
-# Verify Java version
-java -version  # Should show OpenJDK 21.x.x
-
-# Run tests to verify setup
-./mvnw clean test
-```
-
-### Code Quality
-
-- **Code Style**: Run `./mvnw checkstyle:check` before committing
-- **Test Coverage**: Maintain >80% coverage (currently >85%)
-- **Performance**: Load test critical paths before major changes
-- **Documentation**: Update README and JavaDoc for public APIs
-
----
-
 
 
